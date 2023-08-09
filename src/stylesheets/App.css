@@ -1,0 +1,47 @@
+.main-container {
+  margin: 5em auto;
+  display: flex;
+  flex-direction: column;
+  width: 75%;
+}
+
+.header-title {
+  font-size: 1.1rem;
+  text-align: center;
+}
+
+.web-title {
+  font-size: 3.5rem;
+  text-align: center;
+  margin-bottom: 0.5em;
+}
+
+.container-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+}
+
+@media (min-width: 768px ) {
+  .container-list {
+    grid-template-columns: repeat(2, 1fr)
+  }
+}
+
+@media (min-width: 1268px ) {
+  .container-list {
+    grid-template-columns: repeat(3, 1fr)
+  }
+}
+
+@media (min-width: 1500px ) {
+  .container-list {
+    grid-template-columns: repeat(4, 1fr)
+  }
+}
+
+@media (max-width: 768px) {
+  .container-list {
+    grid-template-columns: repeat(1, 1fr)
+  }
+}
